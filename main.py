@@ -27,8 +27,6 @@ class aclient(commands.Bot):
                     self.active_cogs.append(filename[:-3])
                 except:
                     print(f"Failed to load {filename[:-3]}")
-                    
-        client.tree.copy_global_to(guild=discord.Object(id=1150376102733303830))
 
     async def on_ready(self):
         # await self.wait_until_ready()
